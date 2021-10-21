@@ -50,11 +50,11 @@ class JobController extends AbstractController
      *
      */
 
-    public function voirfun(): Response 
+    public function voirfun($id): Response 
     {
     
         return $this->render('voir.html.twig', [
-            'controller_name' => 'JobController',
+            'id' => $id,
         ]);
     }
 }
